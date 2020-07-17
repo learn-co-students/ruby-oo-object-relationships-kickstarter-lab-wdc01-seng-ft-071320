@@ -14,7 +14,8 @@ class Backer
     end
 
     def backed_projects
-        ProjectBacker.all.select do |single_pb|
+        matching_record = ProjectBacker.all.select {|single_pb| single_pb.backer == self}
+            matching_record.map {|match| match.project}
             
     end
 

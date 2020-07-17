@@ -10,14 +10,10 @@ attr_reader :title
     end
     
 
-
-
-
-
-
-
-
-
+    def backers
+        joint_record = ProjectBacker.all.select {|single_pb| single_pb.project == self}
+        joint_record.map {|match| match.backer}
+    end
 
 
 end
