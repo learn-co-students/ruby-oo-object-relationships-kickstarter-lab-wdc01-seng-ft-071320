@@ -1,4 +1,3 @@
-
 class ProjectBacker
 
     attr_reader :project, :backer
@@ -13,10 +12,4 @@ class ProjectBacker
     def self.all
         @@all
     end
-
-    
-
-
-
-
 end

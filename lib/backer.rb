@@ -21,7 +21,4 @@ class Backer
         #binding.pry
      end
     end
-
-
-
 end

@@ -1,4 +1,3 @@
-
 class Project
 
     attr_reader :title
@@ -7,7 +6,6 @@ class Project
         @title = title
         @@all << self
     end
-
 
     def  add_backer(backer)
         ProjectBacker.new(self, backer)
